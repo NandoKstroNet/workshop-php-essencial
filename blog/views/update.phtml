@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inserção de Novo Post</title>
+</head>
+<body>
+	<div class="form">
+	<h1>Wordpress 0.01</h1>
+		<form action="/blog/index.php?url=update&amp;id=<?=$post['id']?>" method="post">
+			<p>
+				Titulo: <br>
+				<input type="text" name="title" value="<?=$post['title'];?>"required>
+			</p>
+			<p>
+				Conteudo <br>
+				<textarea name="content" cols="30" rows="10"><?=$post['content'];?></textarea>
+			</p>
+			<input type="submit" name="Enviar" value="Atualizar Post">	
+		</form>
+	</div>
+</body>
+</html>

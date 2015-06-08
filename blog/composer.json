@@ -1,0 +1,15 @@
+{
+    "name": "nandokstronet/blog",
+    "authors": [
+        {
+            "name": "Nando Kstro Net",
+            "email": "nandokstro@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+	    "": "src/"
+	}
+   }
+}
