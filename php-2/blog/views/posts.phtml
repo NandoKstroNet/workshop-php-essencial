@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Posts Workshop</title>
+</head>
+<body>
+	<a href="/blog/index.php?url=salvar-post">Novo</a>
+	<hr>
+	<ul>
+	<?php foreach($blog->read() as $post): ?>
+		<li>
+			<h3><?=$post['title'];?>
+			<a href="/blog/index.php?url=delete&id=<?=$post['id']?>">X</a>
+			<a href="/blog/index.php?url=single&id=<?=$post['id']?>">Editar</a>
+			</h3>
+		</li>
+		<?php endforeach; ?>
+	</ul>
+</body>
+</html>
